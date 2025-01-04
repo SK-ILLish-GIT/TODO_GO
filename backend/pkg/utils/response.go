@@ -6,7 +6,7 @@ type APIResponse struct {
 	StatusCode int         `json:"statuscode"`
 	Data       interface{} `json:"data,omitempty"`
 	Message    string      `json:"message"`
-	Success    bool        `json:"Success"`
+	Success    bool        `json:"success"`
 }
 
 func JSONResponse(c *fiber.Ctx, statusCode int, data interface{}, message string) error {
